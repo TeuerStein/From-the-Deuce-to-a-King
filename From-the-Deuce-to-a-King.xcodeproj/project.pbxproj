@@ -14,6 +14,7 @@
 		B3AA9FBF25275E8700D23B8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3AA9FBE25275E8700D23B8F /* Assets.xcassets */; };
 		B3AA9FC225275E8700D23B8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3AA9FC025275E8700D23B8F /* LaunchScreen.storyboard */; };
 		B3AA9FCE25275FA100D23B8F /* PlayingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AA9FCD25275FA100D23B8F /* PlayingCard.swift */; };
+		B3AA9FD12527643900D23B8F /* PlayingCardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AA9FD02527643900D23B8F /* PlayingCardDeck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		B3AA9FC125275E8700D23B8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3AA9FC325275E8700D23B8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3AA9FCD25275FA100D23B8F /* PlayingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCard.swift; sourceTree = "<group>"; };
+		B3AA9FD02527643900D23B8F /* PlayingCardDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardDeck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				B3AA9FB725275E8400D23B8F /* SceneDelegate.swift */,
 				B3AA9FB925275E8400D23B8F /* ViewController.swift */,
 				B3AA9FCD25275FA100D23B8F /* PlayingCard.swift */,
+				B3AA9FD02527643900D23B8F /* PlayingCardDeck.swift */,
 				B3AA9FBB25275E8400D23B8F /* Main.storyboard */,
 				B3AA9FBE25275E8700D23B8F /* Assets.xcassets */,
 				B3AA9FCA25275F5E00D23B8F /* Supporting Files */,
@@ -150,6 +153,7 @@
 			files = (
 				B3AA9FBA25275E8400D23B8F /* ViewController.swift in Sources */,
 				B3AA9FB625275E8400D23B8F /* AppDelegate.swift in Sources */,
+				B3AA9FD12527643900D23B8F /* PlayingCardDeck.swift in Sources */,
 				B3AA9FCE25275FA100D23B8F /* PlayingCard.swift in Sources */,
 				B3AA9FB825275E8400D23B8F /* SceneDelegate.swift in Sources */,
 			);
