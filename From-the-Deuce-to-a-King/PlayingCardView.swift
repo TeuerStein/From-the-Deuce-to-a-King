@@ -42,6 +42,11 @@ class PlayingCardView: UIView {
         label.isHidden = !isFaceUp
     }
     
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        setNeedsDisplay()
+        setNeedsLayout()
+    }
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         
