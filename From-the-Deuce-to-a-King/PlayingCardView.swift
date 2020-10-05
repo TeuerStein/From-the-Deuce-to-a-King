@@ -11,7 +11,7 @@ class PlayingCardView: UIView {
     
     var rank: Int = 5 { didSet{ setNeedsDisplay(); setNeedsLayout() } }
     var suit: String = "♥︎" { didSet{ setNeedsDisplay(); setNeedsLayout() } }
-    var isFaseUp: Bool = true { didSet{ setNeedsDisplay(); setNeedsLayout() } }
+    var isFaceUp: Bool = true { didSet{ setNeedsDisplay(); setNeedsLayout() } }
     
     private func centeredAttributedString(_ string: String, fontSize: CGFloat) -> NSAttributedString {
         var font = UIFont.preferredFont(forTextStyle: .body).withSize(fontSize)
@@ -22,11 +22,35 @@ class PlayingCardView: UIView {
     }
     
     private var cornerString: NSAttributedString {
-        return centeredAttributedString(rank+"\n"+suit, fontSize: 0.0)
+        return centeredAttributedString(rankString+"\n"+suit, fontSize: cornerFontSize)
+    }
+    
+    private lazy var upperLeftCornerLabel = createCornerLabel()
+    private lazy var lowerRightCornerLabel = createCornerLabel()
+    
+    private func createCornerLabel() -> UILabel {
+        let label = UILabel()
+        label.numberOfLines = 0
+        addSubview(label)
+        return label
+    }
+    
+    private func configureCornerLabel(_ label: UILabel) {
+        label.attributedText = cornerString
+        label.frame.size = CGSize.zero
+        label.sizeToFit()
+        label.isHidden = !isFaceUp
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        configureCornerLabel(upperLeftCornerLabel)
+        upperLeftCornerLabel.frame.origin = bounds.origin.offsetBy(dx: cornerOffset, dy: cornerOffset)
     }
 
     override func draw(_ rect: CGRect) {
-        let roundedRect = UIBezierPath(roundedRect: bounds, cornerRadius: 16.0)
+        let roundedRect = UIBezierPath(roundedRect: bounds, cornerRadius: cornerRadius)
         roundedRect.addClip()
         UIColor.white.setFill()
         roundedRect.fill()
@@ -65,9 +89,9 @@ extension PlayingCardView {
     }
 }
 
-extension CGRect {
+extension CGPoint {
     func offsetBy(dx: CGFloat, dy: CGFloat) -> CGPoint {
-        return CGPoint(x: minX + dx, y: minY + dy)
+        return CGPoint(x: x + dx, y: y + dy)
     }
 }
 
