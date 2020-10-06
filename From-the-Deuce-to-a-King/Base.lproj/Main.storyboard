@@ -18,7 +18,7 @@
                         <subviews>
                             <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yOF-ct-UNQ" customClass="PlayingCardView" customModule="From_the_Deuce_to_a_King" customModuleProvider="target">
                                 <rect key="frame" x="16" y="59" width="343" height="549"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="yOF-ct-UNQ" secondAttribute="height" multiplier="5:8" id="Wcy-Yy-aQ6"/>
                                     <constraint firstAttribute="width" priority="750" constant="800" id="n6B-kq-6Fm"/>

@@ -14,10 +14,10 @@ struct PlayingCard: CustomStringConvertible {
     
     enum Suit: String, CustomStringConvertible {
         
-        case spades = "♠︎"
-        case hearts = "♥︎"
-        case clubs = "♣︎"
-        case diamonds = "♦︎"
+        case spades = "♠"
+        case hearts = "♥"
+        case clubs = "♣"
+        case diamonds = "♦"
         
         static var all: [Suit] {
             return [Suit.spades,.hearts,.diamonds,.clubs]
