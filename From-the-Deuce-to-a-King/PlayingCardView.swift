@@ -9,7 +9,7 @@ import UIKit
 
 class PlayingCardView: UIView {
     
-    var rank: Int = 13 { didSet{ setNeedsDisplay(); setNeedsLayout() } }
+    var rank: Int = 1 { didSet{ setNeedsDisplay(); setNeedsLayout() } }
     var suit: String = "♦" { didSet{ setNeedsDisplay(); setNeedsLayout() } }
     var isFaceUp: Bool = true { didSet{ setNeedsDisplay(); setNeedsLayout() } }
     
@@ -63,6 +63,7 @@ class PlayingCardView: UIView {
     }
     
     private func drawPips() {
+        // Тут баг, пофіксити
         let pipsPerRowForRank = [[0], [1], [1,1], [1,1,1], [2,2], [2,1,2], [2,2,2], [2,1,2,2], [2,2,2,2], [2,2,1,2,2], [2,2,2,2,2]]
         
         func createPipString(thatFits pipRect: CGRect) -> NSAttributedString {
@@ -84,7 +85,7 @@ class PlayingCardView: UIView {
             let pipsPerRow = pipsPerRowForRank[rank]
             var pipRect = bounds.insetBy(dx: cornerOffset, dy: cornerOffset).insetBy(dx: cornerString.size().width, dy: cornerString.size().height / 2)
             let pipString = createPipString(thatFits: pipRect)
-            let pipRowSpacing = pipString.size().height / CGFloat(pipsPerRow.count)
+            let pipRowSpacing = pipRect.size.height / CGFloat(pipsPerRow.count)
             pipRect.size.height = pipString.size().height
             pipRect.origin.y += (pipRowSpacing - pipRect.size.height) / 2
             for pipCount in pipsPerRow {
@@ -110,6 +111,8 @@ class PlayingCardView: UIView {
         
         if let faceCardImage = UIImage(named: rankString+suit) {
             faceCardImage.draw(in: bounds.zoom(by: SizeRatio.faceCardImageSizeToBoundsSize))
+        } else {
+            drawPips()
         }
     }
 }
