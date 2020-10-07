@@ -19,10 +19,14 @@
                             <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yOF-ct-UNQ" customClass="PlayingCardView" customModule="From_the_Deuce_to_a_King" customModuleProvider="target">
                                 <rect key="frame" x="16" y="59" width="343" height="549"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="yOF-ct-UNQ" secondAttribute="height" multiplier="5:8" id="Wcy-Yy-aQ6"/>
                                     <constraint firstAttribute="width" priority="750" constant="800" id="n6B-kq-6Fm"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="cQd-GD-EBb" appends="YES" id="OET-5Z-r5l"/>
+                                </connections>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -41,6 +45,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="cQd-GD-EBb">
+                    <connections>
+                        <action selector="flipCard:" destination="BYZ-38-t0r" id="WCR-1N-oGX"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="141.59999999999999" y="91.304347826086968"/>
         </scene>
