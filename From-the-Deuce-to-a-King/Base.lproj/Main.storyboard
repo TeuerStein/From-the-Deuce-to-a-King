@@ -36,6 +36,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yOF-ct-UNQ" secondAttribute="trailing" constant="16" id="rM4-ZI-clh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="playingCardView" destination="yOF-ct-UNQ" id="Nyx-QC-HdT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
