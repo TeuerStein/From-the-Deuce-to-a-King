@@ -34,7 +34,14 @@ class ViewController: UIViewController {
         switch recognizer.state {
         case .ended:
             if let chosenCardView = recognizer.view as? PlayingCardView {
-                chosenCardView.isFaceUp = !chosenCardView.isFaceUp
+                UIView.transition(
+                    with: chosenCardView,
+                    duration: 0.6,
+                    options: [.transitionFlipFromLeft],
+                    animations: {
+                        chosenCardView.isFaceUp = !chosenCardView.isFaceUp
+                    }
+                )
             }
         default:
             break
