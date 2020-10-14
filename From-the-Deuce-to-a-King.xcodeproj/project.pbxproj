@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B30653362536DC5600CDEA69 /* CardBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30653352536DC5600CDEA69 /* CardBehavior.swift */; };
 		B3AA9FB625275E8400D23B8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AA9FB525275E8400D23B8F /* AppDelegate.swift */; };
 		B3AA9FB825275E8400D23B8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AA9FB725275E8400D23B8F /* SceneDelegate.swift */; };
 		B3AA9FBA25275E8400D23B8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AA9FB925275E8400D23B8F /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B30653352536DC5600CDEA69 /* CardBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBehavior.swift; sourceTree = "<group>"; };
 		B3AA9FB225275E8400D23B8F /* From-the-Deuce-to-a-King.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "From-the-Deuce-to-a-King.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3AA9FB525275E8400D23B8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3AA9FB725275E8400D23B8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			children = (
 				B3AA9FB725275E8400D23B8F /* SceneDelegate.swift */,
 				B3AA9FB925275E8400D23B8F /* ViewController.swift */,
+				B30653352536DC5600CDEA69 /* CardBehavior.swift */,
 				B3AA9FCD25275FA100D23B8F /* PlayingCard.swift */,
 				B3AA9FD32528856400D23B8F /* PlayingCardView.swift */,
 				B3AA9FD02527643900D23B8F /* PlayingCardDeck.swift */,
@@ -160,6 +163,7 @@
 				B3AA9FD12527643900D23B8F /* PlayingCardDeck.swift in Sources */,
 				B3AA9FCE25275FA100D23B8F /* PlayingCard.swift in Sources */,
 				B3AA9FB825275E8400D23B8F /* SceneDelegate.swift in Sources */,
+				B30653362536DC5600CDEA69 /* CardBehavior.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
