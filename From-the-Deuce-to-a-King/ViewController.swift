@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         
         for cardView in cardViews {
             cardView.isFaceUp = true
-            let card = cards.remove(at: cards.count.arc4random)
+            let card = cards.remove(at: cards.count.arc4Random)
             cardView.rank = card.rank.order
             cardView.suit = card.suit.rawValue
             cardView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(flipCard(_:))))

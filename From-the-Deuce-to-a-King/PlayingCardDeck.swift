@@ -12,7 +12,7 @@ struct PlayingCardDeck {
     
     mutating func draw() -> PlayingCard? {
         if cards.isEmpty { return nil }
-        return cards.remove(at: cards.count.arc4random)
+        return cards.remove(at: cards.count.arc4Random)
     }
     
     init() {
@@ -25,7 +25,7 @@ struct PlayingCardDeck {
 }
 
 extension Int {
-    var arc4random: Int {
+    var arc4Random: Int {
         switch self {
         case 1...Int.max:
             return Int(arc4random_uniform(UInt32(self)))
