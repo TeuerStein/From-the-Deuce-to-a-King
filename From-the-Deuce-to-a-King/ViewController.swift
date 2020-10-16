@@ -7,6 +7,18 @@
 
 import UIKit
 
+struct Constants {
+    static var flipCardAnimationDuration: TimeInterval = 0.6
+    static var matchCardAnimationDuration: TimeInterval = 0.6
+    static var matchCardAnimationScaledUp: CGFloat = 3.0
+    static var matchCardAnimationScaledDown: CGFloat = 0.1
+    static var behaviorResistance: CGFloat = 0
+    static var behaviorElasticity: CGFloat = 1.0
+    static var behaviorPushMagnitudeMinimum: CGFloat = 0.5
+    static var behaviorPushMagnitudeRandomFactor: CGFloat = 1.0
+    static var cardsPerMainViewWidth: CGFloat = 5
+}
+
 class ViewController: UIViewController {
     
     private var deck = PlayingCardDeck()
