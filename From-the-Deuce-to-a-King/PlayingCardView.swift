@@ -50,7 +50,7 @@ class PlayingCardView: UIView {
         return label
     }
     
-    private func configureCornerLabel(_ label: UILabel) {
+    private func configureLabel(_ label: UILabel) {
         label.attributedText = cornerString
         label.frame.size = CGSize.zero
         label.sizeToFit()
@@ -65,10 +65,10 @@ class PlayingCardView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        configureCornerLabel(upperLeftCornerLabel)
+        configureLabel(upperLeftCornerLabel)
         upperLeftCornerLabel.frame.origin = bounds.origin.offsetBy(dx: cornerOffset, dy: cornerOffset)
         
-        configureCornerLabel(lowerRightCornerLabel)
+        configureLabel(lowerRightCornerLabel)
         lowerRightCornerLabel.transform = CGAffineTransform.identity
             .translatedBy(x: lowerRightCornerLabel.frame.size.width, y: lowerRightCornerLabel.frame.size.height)
             .rotated(by: CGFloat.pi)
@@ -130,7 +130,7 @@ class PlayingCardView: UIView {
                 drawPips()
             }
         } else {
-            if let cardBackImage = UIImage(named: "cardback") {
+            if let cardBackImage = UIImage(named: "cardback", in: Bundle(for: self.classForCoder), compatibleWith: traitCollection) {
                 cardBackImage.draw(in: bounds)
             }
         }

@@ -16,32 +16,82 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yOF-ct-UNQ" customClass="PlayingCardView" customModule="From_the_Deuce_to_a_King" customModuleProvider="target">
-                                <rect key="frame" x="16" y="59" width="343" height="549"/>
+                            <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yOF-ct-UNQ" customClass="PlayingCardView" customModule="From_the_Deuce_to_a_King" customModuleProvider="target">
+                                <rect key="frame" x="227" y="76" width="78" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="yOF-ct-UNQ" secondAttribute="height" multiplier="5:8" id="Wcy-Yy-aQ6"/>
-                                    <constraint firstAttribute="width" priority="750" constant="800" id="n6B-kq-6Fm"/>
-                                </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="cQd-GD-EBb" appends="YES" id="OET-5Z-r5l"/>
-                                </connections>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ivq-AN-lGE" customClass="PlayingCardView" customModule="From_the_Deuce_to_a_King" customModuleProvider="target">
+                                <rect key="frame" x="132" y="175" width="78" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rUK-EJ-vas" customClass="PlayingCardView" customModule="From_the_Deuce_to_a_King" customModuleProvider="target">
+                                <rect key="frame" x="243" y="336" width="78" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YLN-xs-xXK" customClass="PlayingCardView" customModule="From_the_Deuce_to_a_King" customModuleProvider="target">
+                                <rect key="frame" x="111" y="359" width="78" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KDR-cv-g3Y" customClass="PlayingCardView" customModule="From_the_Deuce_to_a_King" customModuleProvider="target">
+                                <rect key="frame" x="30" y="51" width="78" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ryf-PK-J2I" customClass="PlayingCardView" customModule="From_the_Deuce_to_a_King" customModuleProvider="target">
+                                <rect key="frame" x="30" y="246" width="78" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f1x-Rc-4zo" customClass="PlayingCardView" customModule="From_the_Deuce_to_a_King" customModuleProvider="target">
+                                <rect key="frame" x="206" y="496" width="78" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B5A-7k-oZq" customClass="PlayingCardView" customModule="From_the_Deuce_to_a_King" customModuleProvider="target">
+                                <rect key="frame" x="56" y="509" width="78" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dh3-fW-QJS" customClass="PlayingCardView" customModule="From_the_Deuce_to_a_King" customModuleProvider="target">
+                                <rect key="frame" x="272" y="204" width="78" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dkU-wo-GDo" customClass="PlayingCardView" customModule="From_the_Deuce_to_a_King" customModuleProvider="target">
+                                <rect key="frame" x="116" y="11" width="78" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
-                        <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="yOF-ct-UNQ" secondAttribute="bottom" constant="16" id="2EC-Qq-yLl"/>
-                            <constraint firstItem="yOF-ct-UNQ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="8ZO-3J-k0s"/>
-                            <constraint firstItem="yOF-ct-UNQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="AIq-ez-A6k"/>
-                            <constraint firstItem="yOF-ct-UNQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Caj-aK-nhp"/>
-                            <constraint firstItem="yOF-ct-UNQ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="dpA-8N-aOv"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yOF-ct-UNQ" secondAttribute="trailing" constant="16" id="rM4-ZI-clh"/>
-                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="playingCardView" destination="yOF-ct-UNQ" id="Nyx-QC-HdT"/>
+                        <outletCollection property="cardViews" destination="yOF-ct-UNQ" collectionClass="NSMutableArray" id="NqD-17-AEh"/>
+                        <outletCollection property="cardViews" destination="dh3-fW-QJS" collectionClass="NSMutableArray" id="afy-cW-u3h"/>
+                        <outletCollection property="cardViews" destination="rUK-EJ-vas" collectionClass="NSMutableArray" id="bpF-iF-GFo"/>
+                        <outletCollection property="cardViews" destination="dkU-wo-GDo" collectionClass="NSMutableArray" id="ghM-Rw-HlD"/>
+                        <outletCollection property="cardViews" destination="B5A-7k-oZq" collectionClass="NSMutableArray" id="YKh-Uc-ToY"/>
+                        <outletCollection property="cardViews" destination="YLN-xs-xXK" collectionClass="NSMutableArray" id="hdZ-C1-xn4"/>
+                        <outletCollection property="cardViews" destination="Ryf-PK-J2I" collectionClass="NSMutableArray" id="AJR-2J-a9p"/>
+                        <outletCollection property="cardViews" destination="ivq-AN-lGE" collectionClass="NSMutableArray" id="UJW-Ve-cbn"/>
+                        <outletCollection property="cardViews" destination="KDR-cv-g3Y" collectionClass="NSMutableArray" id="aJ4-wW-G7K"/>
+                        <outletCollection property="cardViews" destination="dkU-wo-GDo" collectionClass="NSMutableArray" id="ySu-qE-wdk"/>
+                        <outletCollection property="cardViews" destination="f1x-Rc-4zo" collectionClass="NSMutableArray" id="HOG-XD-SoG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

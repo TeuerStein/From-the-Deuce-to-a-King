@@ -23,7 +23,7 @@ struct PlayingCard: CustomStringConvertible {
             return [Suit.spades,.hearts,.diamonds,.clubs]
         }
         
-        var description: String { return rawValue }
+        var description: String { return self.rawValue }
     }
     
     enum Rank: CustomStringConvertible{
