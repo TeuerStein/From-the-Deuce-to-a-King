@@ -66,7 +66,6 @@
 		B3AA9FB425275E8400D23B8F /* From-the-Deuce-to-a-King */ = {
 			isa = PBXGroup;
 			children = (
-				B3AA9FB725275E8400D23B8F /* SceneDelegate.swift */,
 				B3AA9FB925275E8400D23B8F /* ViewController.swift */,
 				B30653352536DC5600CDEA69 /* CardBehavior.swift */,
 				B3AA9FCD25275FA100D23B8F /* PlayingCard.swift */,
@@ -84,6 +83,7 @@
 		B3AA9FCA25275F5E00D23B8F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B3AA9FB725275E8400D23B8F /* SceneDelegate.swift */,
 				B3AA9FB525275E8400D23B8F /* AppDelegate.swift */,
 				B3AA9FC025275E8700D23B8F /* LaunchScreen.storyboard */,
 			);
